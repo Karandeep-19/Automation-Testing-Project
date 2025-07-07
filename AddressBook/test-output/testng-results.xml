@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-06T15:06:02 EDT" name="AddressBookTestSuite" finished-at="2025-07-06T15:06:53 EDT" duration-ms="51140">
+    <groups>
+    </groups>
+    <test started-at="2025-07-06T15:06:02 EDT" name="AddressBookTest" finished-at="2025-07-06T15:06:53 EDT" duration-ms="51140">
+      <class name="AddAddressTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:02 EDT" name="setup" finished-at="2025-07-06T15:06:05 EDT" duration-ms="2957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addNewEntryValidationEmptyField()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:05 EDT" name="addNewEntryValidationEmptyField" finished-at="2025-07-06T15:06:06 EDT" duration-ms="162" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af9e092-65a0-4b39-8071-97768ac03a12, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66924, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9af9e092-65a0-4b39-8071-97768ac03a12]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af9e092-65a0-4b39-8071-97768ac03a12, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66924, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9af9e092-65a0-4b39-8071-97768ac03a12
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at AddAddressTest.addNewEntryValidationEmptyField(AddAddressTest.java:168)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEntryValidationEmptyField -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:06 EDT" name="quit" finished-at="2025-07-06T15:06:06 EDT" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:06 EDT" name="setup" finished-at="2025-07-06T15:06:08 EDT" duration-ms="2183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addNewEntryWithInvalidEmailField()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:08 EDT" name="addNewEntryWithInvalidEmailField" finished-at="2025-07-06T15:06:09 EDT" duration-ms="139" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Test failed: Form accepted invalid addr_email_1 input data. Validation is missing!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Test failed: Form accepted invalid addr_email_1 input data. Validation is missing!
+at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+at AddAddressTest.addNewEntryWithInvalidEmailField(AddAddressTest.java:186)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEntryWithInvalidEmailField -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:09 EDT" name="quit" finished-at="2025-07-06T15:06:09 EDT" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:09 EDT" name="setup" finished-at="2025-07-06T15:06:12 EDT" duration-ms="2168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddAddressBusiness()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:12 EDT" name="testAddAddressBusiness" finished-at="2025-07-06T15:06:12 EDT" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAddressBusiness -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:12 EDT" name="quit" finished-at="2025-07-06T15:06:13 EDT" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:13 EDT" name="setup" finished-at="2025-07-06T15:06:15 EDT" duration-ms="1990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddAddressFamily()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:15 EDT" name="testAddAddressFamily" finished-at="2025-07-06T15:06:15 EDT" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAddressFamily -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:16 EDT" name="quit" finished-at="2025-07-06T15:06:16 EDT" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:16 EDT" name="setup" finished-at="2025-07-06T15:06:18 EDT" duration-ms="2002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddAddressFriend()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:18 EDT" name="testAddAddressFriend" finished-at="2025-07-06T15:06:19 EDT" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAddressFriend -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:19 EDT" name="quit" finished-at="2025-07-06T15:06:20 EDT" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:20 EDT" name="setup" finished-at="2025-07-06T15:06:22 EDT" duration-ms="1986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddAddressOther()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:22 EDT" name="testAddAddressOther" finished-at="2025-07-06T15:06:23 EDT" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAddressOther -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:AddAddressTest@1f2586d6]" started-at="2025-07-06T15:06:23 EDT" name="quit" finished-at="2025-07-06T15:06:23 EDT" duration-ms="731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- AddAddressTest -->
+      <class name="ViewAddresDetails">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:37 EDT" name="setup" finished-at="2025-07-06T15:06:39 EDT" duration-ms="2389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="vewAddressDetailsByName(java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:39 EDT" name="vewAddressDetailsByName" data-provider="nameList" finished-at="2025-07-06T15:06:39 EDT" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Godly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vewAddressDetailsByName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:40 EDT" name="quit" finished-at="2025-07-06T15:06:40 EDT" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:40 EDT" name="setup" finished-at="2025-07-06T15:06:43 EDT" duration-ms="2258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="vewAddressDetailsByName(java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:43 EDT" name="vewAddressDetailsByName" data-provider="nameList" finished-at="2025-07-06T15:06:43 EDT" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amandeep]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vewAddressDetailsByName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:43 EDT" name="quit" finished-at="2025-07-06T15:06:44 EDT" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:44 EDT" name="setup" finished-at="2025-07-06T15:06:46 EDT" duration-ms="2323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="vewAddressDetailsByName(java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:46 EDT" name="vewAddressDetailsByName" data-provider="nameList" finished-at="2025-07-06T15:06:46 EDT" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karandeep]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vewAddressDetailsByName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:46 EDT" name="quit" finished-at="2025-07-06T15:06:47 EDT" duration-ms="799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:47 EDT" name="setup" finished-at="2025-07-06T15:06:49 EDT" duration-ms="2260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="vewAddressDetailsByName(java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:49 EDT" name="vewAddressDetailsByName" data-provider="nameList" finished-at="2025-07-06T15:06:49 EDT" duration-ms="147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Operator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vewAddressDetailsByName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:49 EDT" name="quit" finished-at="2025-07-06T15:06:50 EDT" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:50 EDT" name="setup" finished-at="2025-07-06T15:06:53 EDT" duration-ms="2272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="vewAddressDetailsByName(java.lang.String)[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:53 EDT" name="vewAddressDetailsByName" data-provider="nameList" finished-at="2025-07-06T15:06:53 EDT" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Elon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vewAddressDetailsByName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAddresDetails@752325ad]" started-at="2025-07-06T15:06:53 EDT" name="quit" finished-at="2025-07-06T15:06:53 EDT" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ViewAddresDetails -->
+      <class name="EditAddressTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:26 EDT" name="setup" finished-at="2025-07-06T15:06:28 EDT" duration-ms="1937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editAddressWithInvalidPhNOTest()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:28 EDT" name="editAddressWithInvalidPhNOTest" finished-at="2025-07-06T15:06:29 EDT" duration-ms="427" status="FAIL">
+          <exception class="org.opentest4j.AssertionFailedError">
+            <message>
+              <![CDATA[Test failed: Form accepted invalid input data. Validation is missing!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.opentest4j.AssertionFailedError: Test failed: Form accepted invalid input data. Validation is missing!
+at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+at EditAddressTest.editAddressWithInvalidPhNOTest(EditAddressTest.java:158)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.opentest4j.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAddressWithInvalidPhNOTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:29 EDT" name="quit" finished-at="2025-07-06T15:06:29 EDT" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:29 EDT" name="setup" finished-at="2025-07-06T15:06:32 EDT" duration-ms="2393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editAddressWithNullValueTest()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:32 EDT" name="editAddressWithNullValueTest" finished-at="2025-07-06T15:06:32 EDT" duration-ms="423" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9c5faed6-c9d0-457c-981b-9a70b9fe2946, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 51056, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9c5faed6-c9d0-457c-981b-9a70b9fe2946]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9c5faed6-c9d0-457c-981b-9a70b9fe2946, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 51056, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9c5faed6-c9d0-457c-981b-9a70b9fe2946
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at EditAddressTest.editAddressWithNullValueTest(EditAddressTest.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAddressWithNullValueTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:32 EDT" name="quit" finished-at="2025-07-06T15:06:33 EDT" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:33 EDT" name="setup" finished-at="2025-07-06T15:06:35 EDT" duration-ms="2358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editAnAddress()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:35 EDT" name="editAnAddress" finished-at="2025-07-06T15:06:36 EDT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAnAddress -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:EditAddressTest@2a5c8d3f]" started-at="2025-07-06T15:06:36 EDT" name="quit" finished-at="2025-07-06T15:06:37 EDT" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- EditAddressTest -->
+      <class name="ViewAllAddressTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:ViewAllAddressTest@3a52dba3]" started-at="2025-07-06T15:06:23 EDT" name="setup" finished-at="2025-07-06T15:06:25 EDT" duration-ms="2004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.gecko.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testListAllAddress()[pri:0, instance:ViewAllAddressTest@3a52dba3]" started-at="2025-07-06T15:06:25 EDT" name="testListAllAddress" finished-at="2025-07-06T15:06:25 EDT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListAllAddress -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:ViewAllAddressTest@3a52dba3]" started-at="2025-07-06T15:06:26 EDT" name="quit" finished-at="2025-07-06T15:06:26 EDT" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- ViewAllAddressTest -->
+    </test> <!-- AddressBookTest -->
+  </suite> <!-- AddressBookTestSuite -->
+</testng-results>

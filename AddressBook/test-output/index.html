@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AddressBookTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">AddressBookTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AddressBookTestSuite" class="navigator-link ">
+                    <span>C:\Users\Admin\eclipse-workspace\ProjectAutomation2\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AddressBookTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AddressBookTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AddressBookTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AddressBookTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AddressBookTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AddressBookTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 4 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AddressBookTestSuite" class="hide-methods failed suite-AddressBookTestSuite"> (hide)</a> <!-- hide-methods failed suite-AddressBookTestSuite -->
+                      <a href="#" panel-name="suite-AddressBookTestSuite" class="show-methods failed suite-AddressBookTestSuite"> (show)</a> <!-- show-methods failed suite-AddressBookTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AddressBookTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="addNewEntryValidationEmptyField">addNewEntryValidationEmptyField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="addNewEntryWithInvalidEmailField">addNewEntryWithInvalidEmailField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="EditAddressTest" class="method navigator-link" hash-for-method="editAddressWithInvalidPhNOTest">editAddressWithInvalidPhNOTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="EditAddressTest" class="method navigator-link" hash-for-method="editAddressWithNullValueTest">editAddressWithNullValueTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AddressBookTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AddressBookTestSuite" class="hide-methods passed suite-AddressBookTestSuite"> (hide)</a> <!-- hide-methods passed suite-AddressBookTestSuite -->
+                      <a href="#" panel-name="suite-AddressBookTestSuite" class="show-methods passed suite-AddressBookTestSuite"> (show)</a> <!-- show-methods passed suite-AddressBookTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AddressBookTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="EditAddressTest" class="method navigator-link" hash-for-method="editAnAddress">editAnAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="testAddAddressBusiness">testAddAddressBusiness</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="testAddAddressFamily">testAddAddressFamily</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="testAddAddressFriend">testAddAddressFriend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="AddAddressTest" class="method navigator-link" hash-for-method="testAddAddressOther">testAddAddressOther</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAllAddressTest" class="method navigator-link" hash-for-method="testListAllAddress">testListAllAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAddresDetails" class="method navigator-link" hash-for-method="vewAddressDetailsByName(Elon)">vewAddressDetailsByName(Elon)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAddresDetails" class="method navigator-link" hash-for-method="vewAddressDetailsByName(Operator)">vewAddressDetailsByName(Operator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAddresDetails" class="method navigator-link" hash-for-method="vewAddressDetailsByName(Godly)">vewAddressDetailsByName(Godly)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAddresDetails" class="method navigator-link" hash-for-method="vewAddressDetailsByName(Amandeep)">vewAddressDetailsByName(Amandeep)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AddressBookTestSuite" title="ViewAddresDetails" class="method navigator-link" hash-for-method="vewAddressDetailsByName(Karandeep)">vewAddressDetailsByName(Karandeep)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AddressBookTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AddressBookTestSuite" class="panel AddressBookTestSuite">
+          <div class="suite-AddressBookTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AddAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewEntryValidationEmptyField">
+                  </a> <!-- addNewEntryValidationEmptyField -->
+                  <span class="method-name">addNewEntryValidationEmptyField</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af9e092-65a0-4b39-8071-97768ac03a12, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 66924, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9af9e092-65a0-4b39-8071-97768ac03a12
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at AddAddressTest.addNewEntryValidationEmptyField(AddAddressTest.java:168)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewEntryWithInvalidEmailField">
+                  </a> <!-- addNewEntryWithInvalidEmailField -->
+                  <span class="method-name">addNewEntryWithInvalidEmailField</span>
+                  <div class="stack-trace">org.opentest4j.AssertionFailedError: Test failed: Form accepted invalid addr_email_1 input data. Validation is missing!
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at AddAddressTest.addNewEntryWithInvalidEmailField(AddAddressTest.java:186)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-failed -->
+          <div class="suite-AddressBookTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">EditAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAddressWithInvalidPhNOTest">
+                  </a> <!-- editAddressWithInvalidPhNOTest -->
+                  <span class="method-name">editAddressWithInvalidPhNOTest</span>
+                  <div class="stack-trace">org.opentest4j.AssertionFailedError: Test failed: Form accepted invalid input data. Validation is missing!
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at EditAddressTest.editAddressWithInvalidPhNOTest(EditAddressTest.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAddressWithNullValueTest">
+                  </a> <!-- editAddressWithNullValueTest -->
+                  <span class="method-name">editAddressWithNullValueTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9c5faed6-c9d0-457c-981b-9a70b9fe2946, findElement {value=h2, using=tag name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.0.2, moz:accessibilityChecks: false, moz:buildID: 20250627085530, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 51056, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9c5faed6-c9d0-457c-981b-9a70b9fe2946
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at EditAddressTest.editAddressWithNullValueTest(EditAddressTest.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-failed -->
+          <div class="suite-AddressBookTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AddAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAddressBusiness">
+                  </a> <!-- testAddAddressBusiness -->
+                  <span class="method-name">testAddAddressBusiness</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAddressFamily">
+                  </a> <!-- testAddAddressFamily -->
+                  <span class="method-name">testAddAddressFamily</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAddressFriend">
+                  </a> <!-- testAddAddressFriend -->
+                  <span class="method-name">testAddAddressFriend</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAddressOther">
+                  </a> <!-- testAddAddressOther -->
+                  <span class="method-name">testAddAddressOther</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-passed -->
+          <div class="suite-AddressBookTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EditAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAnAddress">
+                  </a> <!-- editAnAddress -->
+                  <span class="method-name">editAnAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-passed -->
+          <div class="suite-AddressBookTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ViewAddresDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="vewAddressDetailsByName(Elon)">
+                  </a> <!-- vewAddressDetailsByName(Elon) -->
+                  <span class="method-name">vewAddressDetailsByName</span>
+                  <span class="parameters">(Elon)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vewAddressDetailsByName(Operator)">
+                  </a> <!-- vewAddressDetailsByName(Operator) -->
+                  <span class="method-name">vewAddressDetailsByName</span>
+                  <span class="parameters">(Operator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vewAddressDetailsByName(Godly)">
+                  </a> <!-- vewAddressDetailsByName(Godly) -->
+                  <span class="method-name">vewAddressDetailsByName</span>
+                  <span class="parameters">(Godly)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vewAddressDetailsByName(Amandeep)">
+                  </a> <!-- vewAddressDetailsByName(Amandeep) -->
+                  <span class="method-name">vewAddressDetailsByName</span>
+                  <span class="parameters">(Amandeep)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vewAddressDetailsByName(Karandeep)">
+                  </a> <!-- vewAddressDetailsByName(Karandeep) -->
+                  <span class="method-name">vewAddressDetailsByName</span>
+                  <span class="parameters">(Karandeep)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-passed -->
+          <div class="suite-AddressBookTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ViewAllAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testListAllAddress">
+                  </a> <!-- testListAllAddress -->
+                  <span class="method-name">testListAllAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddressBookTestSuite-class-passed -->
+        </div> <!-- panel AddressBookTestSuite -->
+        <div panel-name="test-xml-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\ProjectAutomation2\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AddressBookTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;IListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AddressBookTest&quot;&gt;
+    &lt;parameter name=&quot;FireFoxPath&quot; value=&quot;C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;FireFoxKey&quot; value=&quot;webdriver.gecko.driver&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AddAddressTest&quot;/&gt;
+      &lt;class name=&quot;ViewAllAddressTest&quot;/&gt;
+      &lt;class name=&quot;EditAddressTest&quot;/&gt;
+      &lt;class name=&quot;ViewAddresDetails&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddressBookTest --&gt;
+&lt;/suite&gt; &lt;!-- AddressBookTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AddressBookTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AddressBookTest (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AddressBookTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AddressBookTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AddressBookTestSuite');
+function tableData_AddressBookTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAddAddressFriend')
+data.setCell(0, 2, 'AddAddressTest')
+data.setCell(0, 3, 919);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'editAnAddress')
+data.setCell(1, 2, 'EditAddressTest')
+data.setCell(1, 3, 827);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAddAddressBusiness')
+data.setCell(2, 2, 'AddAddressTest')
+data.setCell(2, 3, 780);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAddAddressOther')
+data.setCell(3, 2, 'AddAddressTest')
+data.setCell(3, 3, 550);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editAddressWithInvalidPhNOTest')
+data.setCell(4, 2, 'EditAddressTest')
+data.setCell(4, 3, 427);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'editAddressWithNullValueTest')
+data.setCell(5, 2, 'EditAddressTest')
+data.setCell(5, 3, 423);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAddAddressFamily')
+data.setCell(6, 2, 'AddAddressTest')
+data.setCell(6, 3, 393);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'vewAddressDetailsByName')
+data.setCell(7, 2, 'ViewAddresDetails')
+data.setCell(7, 3, 183);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'vewAddressDetailsByName')
+data.setCell(8, 2, 'ViewAddresDetails')
+data.setCell(8, 3, 175);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addNewEntryValidationEmptyField')
+data.setCell(9, 2, 'AddAddressTest')
+data.setCell(9, 3, 162);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'vewAddressDetailsByName')
+data.setCell(10, 2, 'ViewAddresDetails')
+data.setCell(10, 3, 147);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'vewAddressDetailsByName')
+data.setCell(11, 2, 'ViewAddresDetails')
+data.setCell(11, 3, 139);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'addNewEntryWithInvalidEmailField')
+data.setCell(12, 2, 'AddAddressTest')
+data.setCell(12, 3, 139);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'vewAddressDetailsByName')
+data.setCell(13, 2, 'ViewAddresDetails')
+data.setCell(13, 3, 126);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testListAllAddress')
+data.setCell(14, 2, 'ViewAllAddressTest')
+data.setCell(14, 3, 103);
+window.suiteTableData['AddressBookTestSuite']= { tableData: data, tableDiv: 'times-div-AddressBookTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-AddressBookTestSuite">
+              </div> <!-- times-div-AddressBookTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AddressBookTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AddressBookTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AddAddressTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewEntryValidationEmptyField</span>
+                <span class="method-start">2958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">3225 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">3881 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewEntryWithInvalidEmailField</span>
+                <span class="method-start">6065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">6275 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">6956 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAddressBusiness</span>
+                <span class="method-start">9124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">9971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">10697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAddressFamily</span>
+                <span class="method-start">12687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">13167 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">13897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAddressFriend</span>
+                <span class="method-start">15899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">16896 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">17630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAddressOther</span>
+                <span class="method-start">19617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">20219 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ViewAllAddressTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">20951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testListAllAddress</span>
+                <span class="method-start">22955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">23179 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EditAddressTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">23794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editAddressWithInvalidPhNOTest</span>
+                <span class="method-start">25732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">26267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">26948 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editAddressWithNullValueTest</span>
+                <span class="method-start">29341 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">29877 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">30578 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editAnAddress</span>
+                <span class="method-start">32936 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">33837 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ViewAddresDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">34588 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">vewAddressDetailsByName(Godly)</span>
+                <span class="method-start">36977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">37180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">37923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">vewAddressDetailsByName(Amandeep)</span>
+                <span class="method-start">40181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">40425 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">41242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">vewAddressDetailsByName(Karandeep)</span>
+                <span class="method-start">43565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">43765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">44565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">vewAddressDetailsByName(Operator)</span>
+                <span class="method-start">46825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">47028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(webdriver.gecko.driver, C:\\Users\\Admin\\eclipse-workspace\\ProjectAutomation2\\driver\\geckodriver...)</span>
+                <span class="method-start">47873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">vewAddressDetailsByName(Elon)</span>
+                <span class="method-start">50145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">50420 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
